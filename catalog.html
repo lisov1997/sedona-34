@@ -1,10 +1,166 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-<head>
-	<meta charset="utf-8">
-	<title>Гостиницы</title>
-	<link rel="stylesheet" href="styles/styles.css">
-</head>
+  <head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>Гостиницы Седоны</title>
+    <link rel="stylesheet" href="styles/styles.css">
+  </head>
+
+  <body>
+    <header class="page-header">
+      <a href="#" class="logo-link">
+        <img class="logo-image" src="#" alt="#" width="#" height="#">
+      </a>
+      <nav class="page-navigation">
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a class="navigation-link" href="index.html">Главная</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">О Седоне</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">Гостиницы</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="user-list">
+        <li class="user-item">
+          <a href="#" class="search-hotel"></a>
+        </li>
+        <li class="user-item">
+          <a class="favourites-hotel" href="#"></a>
+        </li>
+        <li class="user-item">
+          <a class="hotel-link" href="#"></a>
+        </li>
+      </ul>
+    </header>
+    <main class="main-catalog">
+
+      <!-- Гостиницы Седоны -->
+
+      <section class="catalog-user">
+        <h1 class="catalog-title">Гостиницы Седоны</h1>
+        <ul class="breadcrubs-list">
+          <li class="breadcrubs-item">
+            <a class="breadcrubs-link" href="index.html"></a>
+          </li>
+          <li class="breadcrubs-item">
+            <a class="breadcrubs-link" href="catalog.html">Гостиницы</a>
+          </li>
+        </ul>
+        <form class="catalog-filter" action="https://echo.htmlacademy.ru" method="get">
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">Инфраструктура:</legend>
+            <ul class="catalog-filter-list">
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" name="swimming-pool" type="checkbox" checked>
+                  Бассейн
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" name="parking-space" type="checkbox" checked>
+                  Парковка
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" name="Wi-Fi" type="checkbox">
+                  Wi-Fi
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">Тип жилья::</legend>
+            <ul class="catalog-filter-list">
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" name="type-of-housing" type="radio" value="hotel" checked>
+                  Гостиница
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" name="type-of-housing" type="radio" value="motel">
+                  Мотель
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" name="type-of-housing" type="radio" value="apartments">
+                  Апартаменты
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="catalog-submit" type="submit">Применить</button>
+          <button type="reset">Сбросить</button>
+        </form>
+      </section>
+
+      <section class="sort-catalog">
+        <h2 class="vissualy-hidden">Сортировка жилья</h2>
+        <span class="section-title">Найдено гостиниц: 38</span>
+        <select class="select-control" name="select-control" id="select-control" aria-label="сортировка жилья">
+          <option value="cheap">Сначала дешёвое</option>
+          <option value="popular">Сначала популярное</option>
+          <option value="expensive">Сначала дорогое</option>
+          <ul class="view-control-list">
+            <li class="view-control-item">
+              <a class="view-control-link" href="#">Отображение таблицей/a>
+            </li>
+            <li class="view-control-item">
+              <a class="view-control-link" href="#">Отображение крупными карточками</a>
+            </li>
+            <li class="view-control-item">
+              <a class="view-control-link" href="#">Отображение крупными карточками</a>
+            </li>
+          </ul>
+        </select>
+      </section>
+      <section class="catalog-card">
+        <h2 class="vissualy-hidden">Остортированное жилье</h2>
+        <ul class="cards-list">
+          <li class="card-item"></li>
+          <li class="card-item"></li>
+          <li class="card-item"></li>
+          <li class="card-item"></li>
+        </ul>
+      </section>
+      <section class="subscription">
+        <h2 class="section-title">Подпишитесь на рассылку</h2>
+        <p class="subscription-desk">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <form class="subscription-form" action="index.html" method="post">
+          <label for="email">Ваш e-mail</label>
+          <input type="email" name="email" id="email">
+          <button class="subscription-btn" type="submit">Подписаться</button>
+        </form>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <ul class="social-list">
+        <li class="social-item">
+          <a class="social-link" href="#">Вконтакте</a>
+        </li>
+        <li class="social-item">
+          <a class="social-link" href="#">Telegram</a>
+        </li>
+        <li class="social-item">
+          <a class="social-link" href="#">Youtube</a>
+        </li>
+      </ul>
+      <address class="contacts">
+        <a class="telephone" href="tel:+7 (812) 812-12-12">+7 (812) 812-12-12</a>
+      </address>
+      <a class="htmlacademy-link" href=""><img class="htmlacademy-logo" src="" alt=""></a>
+    </footer>
+  </body>
 
 </html>
