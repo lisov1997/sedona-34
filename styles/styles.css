@@ -2,7 +2,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  src: url("/fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -10,12 +10,49 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  src: url("/fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
 
 body {
-  font-family: "PT Sans" sans-serif;
+  width: 1280px;
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
+  color:#000000;
+  background-color: #F2F2F2;
+}
+
+.page-wrapper {
+  width:1200px;
+  min-height: 100%;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+}
+
+.btn{
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color:#FFFFFF;
+  background-color: #756157;
+}
+
+/* Хедер */
+
+.navigation-list {
+  list-style: none;
+}
+
+.navigation-link{
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: #000000;
 }
