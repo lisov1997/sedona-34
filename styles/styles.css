@@ -36,7 +36,7 @@ body {
   font-family: inherit;
   font-size: 16px;
   line-height: 20px;
-  font-weight: 700px;
+  font-weight: 700;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
@@ -47,7 +47,7 @@ body {
 /* Хедер */
 
 .navigation-list {
-  list-style: none;
+  list-style-type: none;
 }
 
 .navigation-link{
@@ -57,6 +57,10 @@ body {
   text-transform: capitalize;
   text-decoration: none;
   color: #000000;
+}
+
+.user-list {
+  list-style-type: none;
 }
 
  /* Мэйн */
@@ -97,6 +101,17 @@ body {
   text-transform: uppercase;
 }
 
+.advantages-list {
+  list-style-type: none;
+}
+
+.town-advantages-list {
+  list-style-type: none;
+}
+
+.travel-advantages-list {
+  list-style-type: none;
+}
 .advantages-item {
   color:#FFFFFF;
   background-color: #82B3D3;
@@ -105,5 +120,130 @@ body {
 .travel-advantages-item,
 .town-advantages-item {
   color: #333333;
-  background-color: ;
+  background-color: #f0f6fa;
+}
+
+.advantages-meal {
+  background-color: #FFFFFF;
+}
+
+.advantages-road {
+  background-color: #e6f0f6;
+}
+
+/* Поиск гостиницы */
+
+.hotel-offer-desk {
+  font-size: 22px;
+  line-height: 26px;
+  color:#333333;
+}
+
+.btn-search-hotel {
+  font-size: 20px;
+  line-height: 36px;
+}
+
+/* Новостная рассылка */
+
+.index-newsletter {
+  color:#FFFFFF;
+  background-color: #406585;
+  background-image: url(../images/index/newsletter-background.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.btn-newsletter-submit {
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: #82B3D3;
+}
+
+/* Футер */
+
+.social-list {
+  list-style-type: none;
+}
+
+.telephone {
+  font-size: 40px;
+  line-height: 40px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color:#000000;
+}
+
+/* Каталог */
+/* Гостиницы Седоны */
+
+.catalog-header {
+  color:#FFFFFF;
+  background-color: #7aa2c6;
+  background-image: url(../images/catalog/background-catalog.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.catalog-title {
+  font-size: 60px;
+  line-height: 78px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.breadcrubs {
+  list-style-type: none;
+}
+
+.breadcrubs-link {
+  font-size: 16px;
+  line-height: 21px;
+  text-align: left;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.catalog-submit {
+  background-color: #82B3D3;
+}
+
+/* Отсортированные гостницы  Седоны  */
+
+.view-toggle-list {
+  list-style-type: none;
+}
+
+.cards-list {
+  list-style-type: none;
+}
+
+.card-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.info-type-housing,
+.cost-of-housing {
+  color:#333333;
+}
+
+.btn-to-favorites{
+  background-color: #82B3D3;
+}
+
+.pagination {
+  list-style-type: none;
+}
+
+/* Новостная рассылка  */
+
+.newsletter-catalog .newsletter-desk {
+  font-size: 22px;
+  line-height: 26px;
+  color:#333333;
 }
