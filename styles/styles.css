@@ -16,9 +16,11 @@
 
 body {
   width: 1280px;
+  margin: 0;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
+  text-align: center;
   color:#000000;
   background-color: #F2F2F2;
 }
@@ -55,4 +57,53 @@ body {
   text-transform: capitalize;
   text-decoration: none;
   color: #000000;
+}
+
+ /* Мэйн */
+/* Добро пожаловать в Седону */
+
+.welcome {
+  background-color: #dceaf3;
+  background-image: url(../images/index/index-background.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+/* Преимущества Седоны  */
+
+.section-title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.section-desk {
+  font-size: 22px;
+  line-height: 26px;
+  color:#333333;
+}
+
+.advantages-list{
+  list-style: none;
+}
+
+.travel-advantages-title,
+.town-advantages-title,
+.advantages-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.advantages-item {
+  color:#FFFFFF;
+  background-color: #82B3D3;
+}
+
+.travel-advantages-item,
+.town-advantages-item {
+  color: #333333;
+  background-color: ;
 }
