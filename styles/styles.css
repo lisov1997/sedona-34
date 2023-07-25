@@ -20,7 +20,7 @@
 
 html {
   height: 100%;
-};
+}
 
 body {
   display: flex;
@@ -273,6 +273,9 @@ body {
 }
 
 .breadcrubs {
+  display: flex;
+  margin: 0;
+  padding: 0;
   list-style-type: none;
 }
 
@@ -290,11 +293,24 @@ body {
 
 /* Отсортированные гостницы  Седоны  */
 
+.sort-wrapper {
+  display: flex;
+}
+
+.sort-control {
+  margin-right: 78px;
+}
 .view-toggle-list {
+  display: flex;
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
   list-style-type: none;
 }
 
 .cards-list {
+  margin: 0;
+  padding: 0;
   list-style-type: none;
 }
 
@@ -314,7 +330,16 @@ body {
   background-color: #82b3d3;
 }
 
+.pagination-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
 .pagination {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width:400px;
   list-style-type: none;
 }
 
