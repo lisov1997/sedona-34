@@ -308,6 +308,8 @@ body {
 .footer-wrapper {
   display: flex;
   justify-content: space-between;
+  margin-top: 40px;
+  margin-bottom: 30px;
 }
 
 .social-list {
@@ -341,6 +343,7 @@ body {
 .htmlacademy-logo {
   display: block;
 }
+
 /* Каталог */
 /* Гостиницы Седоны */
 
@@ -350,9 +353,16 @@ body {
   background-image: url(../images/catalog/background-catalog.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
+  margin-bottom: 55px;
 }
 
+.catalog-header-wrapper {
+  margin-top: 35px;
+  margin-bottom: 70px;
+}
 .catalog-title {
+  margin-top: 0;
+  margin-bottom: 10px;
   font-size: 60px;
   line-height: 78px;
   font-weight: 700;
@@ -366,12 +376,28 @@ body {
   list-style-type: none;
 }
 
+.breadcrubs-item:not(:last-child){
+  margin-right: 26px;
+}
+
 .breadcrubs-link {
+  display: inline-block;
+  min-width: 12px;
+  min-height: 12px;
   font-size: 16px;
   line-height: 21px;
   text-align: left;
   text-decoration: none;
   color: #ffffff;
+}
+
+.catalog-filter {
+  display: flex;
+}
+.catalog-filter-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .catalog-submit {
@@ -382,17 +408,34 @@ body {
 
 .sort-wrapper {
   display: flex;
+  margin-bottom: 55px;
 }
-
+.search-housing-quantity {
+  margin: 0;
+  padding: 0;
+}
 .sort-control {
+  display: flex;
   margin-right: 78px;
 }
 .view-toggle-list {
   display: flex;
+  flex-wrap: wrap;
+  max-width:210px;
   margin: 0;
   margin-left: auto;
   padding: 0;
   list-style-type: none;
+}
+
+.view-toggle-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.view-toggle-link {
+  display: block;
+  min-width: 48px;
+  min-height: 48px;
 }
 
 .cards-list {
@@ -416,6 +459,9 @@ body {
 .btn-to-favorites {
   background-color: #82b3d3;
 }
+.card-wrapper {
+  margin-bottom: 96px;
+}
 
 .pagination-wrapper {
   display: flex;
@@ -424,10 +470,22 @@ body {
 
 .pagination {
   display: flex;
+  flex-wrap: wrap;
+  max-width:500px;
   margin: 0;
   padding: 0;
-  width:400px;
   list-style-type: none;
+
+}
+
+.pagination-link {
+  display: block;
+  min-width: 60px;
+  min-height: 60px;
+  color: #FFFFFF;
+  text-decoration: none;
+  background-color: #82B3D3;
+  align-items: middle;
 }
 
 /* Новостная рассылка  */

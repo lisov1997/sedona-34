@@ -34,17 +34,17 @@
             </ul>
             <ul class="user-list">
               <li class="user-item">
-                <a class="search-hotel user-link" href="#">
-                  <span class="vissualy-hidden">Поиск</span>
+                <a class="user-link search-hotel" href="#">
+                  <span class="visually-hidden">Поиск</span>
                 </a>
               </li>
               <li class="user-item">
-                <a class="favourites-hotel user-link" href="#">
-                  <span class="vissualy-hidden">Избранное</span>
+                <a class="user-link favourites-hotel" href="#">
+                  <span class="visually-hidden">Избранное</span>
                 </a>
               </li>
-              <li class="user-item user-link">
-                <a class="btn " href="#">Хочу сюда!</a>
+              <li class="user-item">
+                <a class="user-btn btn" href="#">Хочу сюда!</a>
               </li>
             </ul>
           </nav>
@@ -56,12 +56,12 @@
         <!-- Поиск жилья с фильтрами  -->
 
         <header class="catalog-header">
-          <div class="wrapper">
+          <div class="wrapper catalog-header-wrapper">
             <h1 class="catalog-title">Гостиницы Седоны</h1>
             <ul class="breadcrubs">
               <li class="breadcrubs-item">
                 <a class="breadcrubs-link" href="index.html">
-                  <span class="vissualy-hidden">Главная</span>
+                  <span class="visually-hidden">Главная</span>
                 </a>
               </li>
               <li class="breadcrubs-item">
@@ -69,7 +69,7 @@
               </li>
             </ul>
             <section class="choise-housing">
-              <h2 class="vissualy-hidden"> Поиск гостиниц с фильтрами в Седоне</h2>
+              <h2 class="visually-hidden"> Поиск гостиниц с фильтрами в Седоне</h2>
               <form class="catalog-filter" action="https://echo.htmlacademy.ru" method="get">
                 <fieldset class="catalog-filter-group">
                   <legend class="catalog-filter-title">Инфраструктура:</legend>
@@ -128,8 +128,8 @@
 
         <section class="sort-catalog">
           <div class="sort-wrapper wrapper">
-            <h2 class="vissualy-hidden">Сортировка жилья</h2>
-            <span class="section-title">Найдено гостиниц: 38</span>
+            <h2 class="visually-hidden">Сортировка жилья</h2>
+            <span class="section-title search-housing-quantity">Найдено гостиниц: 38</span>
             <select class="sort-control" name="sort-control" id="sort-control" aria-label="сортировка жилья">
               <option value="cheap">Сначала дешёвое</option>
               <option value="popular">Сначала популярное</option>
@@ -137,20 +137,23 @@
             </select>
             <ul class="view-toggle-list">
               <li class="view-toggle-item">
-                <a class="view-toggle-link" href="#">Показать таблицу</a>
+                <a class="view-toggle-link" href="#">
+                  <span class="visually-hidden">
+                    Показать таблицу</span>
+                </a>
               </li>
               <li class="view-toggle-item">
-                <a class="view-toggle-link" href="#">Показать слайды</a>
+                <a class="view-toggle-link" href="#">
+                  <span class="visually-hidden">Показать слайды</span>
+                </a>
               </li>
               <li class="view-toggle-item">
-                <a class="view-toggle-link" href="#">Показать список</a>
+                <a class="view-toggle-link" href="#"><span class="visually-hidden">Показать список</span></a>
               </li>
             </ul>
           </div>
-        </section>
-        <section class="catalog-card">
           <h2 class="vissualy-hidden">Остортированное карточки жилья</h2>
-          <div class="wrapper">
+          <div class="wrapper card-wrapper">
             <ul class="cards-list">
               <li class="card-item">
                 <h3 class="card-title">Amara Resort & Spa</h3>
