@@ -65,6 +65,7 @@ body {
 }
 
 .btn {
+  display: inline-block;
   font-family: inherit;
   font-size: 16px;
   line-height: 20px;
@@ -74,6 +75,7 @@ body {
   text-decoration: none;
   color: #ffffff;
   background-color: #756157;
+  border-radius: 4px;
 }
 
 /* Хедер */
@@ -130,7 +132,8 @@ body {
 }
 
 .user-btn {
-  padding: 9px 15px;
+  min-width: 160px;
+  padding: 9px 15px 8px 15px;
 }
 
 /* Мэйн */
@@ -297,9 +300,7 @@ body {
 }
 
 .btn-search-hotel {
-  display: block;
-  width: 574px;
-  margin: 0 auto;
+  min-width: 574px;
   margin-bottom: 93px;
   padding: 12px 15px;
   font-size: 20px;
@@ -337,14 +338,17 @@ body {
 }
 
 .btn-newsletter-submit {
+  min-width: 200px;
   font-size: 20px;
   line-height: 36px;
-  font-weight: 700;
   text-transform: uppercase;
   background-color: #82b3d3;
+  border-radius: 0 10px 10px 0;
+  border:none;
 }
 
 /* Футер */
+
 .page-footer {
   padding-top: 40px;
   padding-bottom: 30px;
@@ -436,30 +440,46 @@ body {
 .catalog-filter {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
+
 .catalog-filter-list {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
-.catalog-submit {
+.catalog-filter-btn {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.catalog-submit-btn {
+  min-width: 160px;
+  margin-bottom: 20px;
+  padding: 14px 15px;
   background-color: #82b3d3;
+  border:none;
 }
 
 /* Отсортированные гостницы  Седоны  */
+
 .sort-catalog {
   padding-top: 55px;
   padding-bottom: 25px;
 }
+
 .sort-wrapper {
   display: flex;
   margin-bottom: 56px;
 }
+
 .search-housing-quantity {
   margin: 0;
   padding: 0;
 }
+
 .sort-control {
   display: flex;
   flex-wrap: wrap;
@@ -539,18 +559,25 @@ body {
 
 .btn-more {
   grid-area: more;
+  padding: 9px 15px 8px 15px;
 }
 
 .btn-to-favorites {
   grid-area: favorite;
+  padding: 9px 15px 8px 15px;
+  background-color: #82b3d3;
 }
 
 .stars-rating {
   grid-area:stars;
 }
 
-.info-rating {
+.info-rating-btn {
   grid-area: info;
+  padding: 9px 22px 8px 22px;
+  font-weight: 400;
+  color: #333333;
+  background-color: #F2F2F2;
 }
 
 .card-title {
@@ -565,9 +592,6 @@ body {
   color: #333333;
 }
 
-.btn-to-favorites {
-  background-color: #82b3d3;
-}
 .card-wrapper {
   margin-bottom: 96px;
 }
