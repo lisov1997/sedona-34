@@ -20,7 +20,7 @@
       <header class="page-header">
         <div class="wrapper">
           <nav class="navigation">
-            <a href="index.html" class="logo-link">
+            <a class="logo-link" href="index.html">
               <img class="logo-image" src="images/index/logo-sedona.png" alt="Герб города Седона" width="139"
                 height="70">
             </a>
@@ -44,6 +44,7 @@
               <li class="user-item">
                 <a class="user-icon icon-favourite" href="#">
                   <span class="visually-hidden">Избранное</span>
+                  <span class="favorites-counter">12</span>
                 </a>
               </li>
               <li class="user-item">
@@ -76,7 +77,7 @@
           <ul class="advantages-list">
             <li class="advantages-item city-item">
               <figure class="advantage-figure">
-                <figcaption class="advantage">
+                <figcaption class="advantage-caption">
                   <div class="text-content">
                     <h3 class="advantages-title">Настоящий городок</h3>
                     <p class="town-desk advantage-order">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
@@ -111,7 +112,7 @@
             </li>
             <li class="advantages-item bridge-item">
               <figure class="advantage-figure">
-                <figcaption class="advantage">
+                <figcaption class="advantage-caption">
                   <div class="text-content">
                     <h3 class="advantages-title">Там есть мост дьявола</h3>
                     <p class="bridge-desk advantage-order">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
@@ -168,8 +169,8 @@
             <p class="newsletter-desk">Только полезная информация и никакого спама, <br> честное
               бойскаутское!</p>
             <form class="newsletter-form" action="https://echo.htmlacademy.ru" method="post">
-              <label for="email">Ваш e-mail</label>
-              <input type="email" name="email" id="email">
+              <label class="visually-hidden" for="email">Ваш e-mail</label>
+              <input class="field newsletter-email-field" placeholder="Ваш e-mail" type="email" name="email" id="email">
               <button class="btn btn-newsletter-submit" type="submit">Подписаться</button>
             </form>
           </div>
@@ -227,6 +228,83 @@
           </a>
         </div>
       </footer>
+    </div>
+    <div class="modal-container modal-container-cloose">
+      <div class="modal-search-hotel">
+        <button class="modal-close-btn">
+          <span class="visually-hidden">
+            Закрыть модальное окно
+          </span>
+          <svg class="modal-close-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"
+            width="13" height="13" fill="none" viewBox="0 0 13 13">
+            <path fill="currentColor"
+              d="M13 1.2 11.8 0 6.5 5.3 1.2 0 0 1.2l5.3 5.3L0 11.8 1.2 13l5.3-5.3 5.3 5.3 1.2-1.2-5.3-5.3L13 1.2Z" />
+          </svg>
+        </button>
+        <section class="modal-content">
+          <h2 class="section-title">
+            Поиск гостиницы в Седоне
+          </h2>
+          <form class="search-hotel-form" action="https://echo.htmlacademy.ru" method="post">
+            <p class="field-group error-message">
+              <label class="field-label" for="arrival-date">Дата заезда:</label>
+              <input class="field search-field arrival-date-field " type="text" name="arrival-date" id="arrival-date"
+                placeholder="Укажите дату" value="27 апреля 2020">
+            </p>
+            <p class="field-group success-message">
+              <label class="field-label" for="departure-date">Дата выезда:</label>
+              <input class="field search-field departure-date-field" type="text" name="departure-date"
+                id="departure-date" placeholder="Укажите дату" value="1 сентября 2021">
+            </p>
+            <div class="field-group">
+              <label class="field-label" for="quantity-of-adults">Взрослые:</label>
+              <div class="field-wrapper">
+                <div class="quantity-adults">
+                  <button class="minus-btn">
+                    <svg class="minus-icon" xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                      fill="currentColor" viewBox="0 0 13 1" aria-hidden="true" focusable="false">
+                      <path d="M0 0v1h13V0H0Z" />
+                    </svg>
+                  </button>
+                  <input class="field quantity-adults-field" type="text" name="quantity-of-adults"
+                    id="quantity-of-adults" value="2">
+                  <button class="plus-btn">
+                    <svg class="plus-icon" xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor"
+                      viewBox="0 0 13 13" aria-hidden="true" focusable="false">
+                      <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" />
+                    </svg>
+                  </button>
+                </div>
+                <span class="field-label">
+                  <label class="field-label" for="quantity-of-children">Дети:</label>
+                  <span class="tooltip">
+                    <button class="tooltip-toggle" aria-labelledby="tooltip-label"></button>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут
+                      с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                  </span>
+                </span>
+                <div class="quantity-children">
+                  <button class="minus-btn">
+                    <svg class="minus-icon" xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                      fill="currentColor" viewBox="0 0 13 1" aria-hidden="true" focusable="false">
+                      <path d="M0 0v1h13V0H0Z" />
+                    </svg>
+                  </button>
+                  <input class="field quantity-children-field" type="text" name="quantity-of-children"
+                    id="quantity-of-children" value="1">
+                  <button class="plus-btn">
+                    <svg class="plus-icon" xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor"
+                      viewBox="0 0 13 13" aria-hidden="true" focusable="false">
+                      <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <button class="btn search-form-btn" type="submit">Найти</button>
+          </form>
+        </section>
+      </div>
     </div>
   </body>
 

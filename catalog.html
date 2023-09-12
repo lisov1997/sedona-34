@@ -17,7 +17,7 @@
       <header class="page-header">
         <div class="wrapper">
           <nav class="navigation">
-            <a href="index.html" class="logo-link">
+            <a class="logo-link" href="index.html">
               <img class="logo-image" src="images/index/logo-sedona.png" alt="Герб города Седона" width="139"
                 height="70">
             </a>
@@ -41,6 +41,7 @@
               <li class="user-item">
                 <a class="user-icon icon-favourite" href="#">
                   <span class="visually-hidden">Избранное</span>
+                  <span class="favorites-counter">12</span>
                 </a>
               </li>
               <li class="user-item">
@@ -77,55 +78,91 @@
             <section class="choise-housing">
               <h2 class="visually-hidden"> Поиск гостиниц с фильтрами в Седоне</h2>
               <form class="catalog-filter" action="https://echo.htmlacademy.ru" method="get">
-                <fieldset class="catalog-filter-group">
-                  <legend class="catalog-filter-title">Инфраструктура:</legend>
-                  <ul class="catalog-filter-list">
-                    <li class="catalog-filter-item">
-                      <label class="control">
-                        <input class="control-input" name="swimming-pool" type="checkbox" checked>
-                        Бассейн
-                      </label>
-                    </li>
-                    <li class="catalog-filter-item">
-                      <label class="control">
-                        <input class="control-input" name="parking-space" type="checkbox" checked>
-                        Парковка
-                      </label>
-                    </li>
-                    <li class="catalog-filter-item">
-                      <label class="control">
-                        <input class="control-input" name="Wi-Fi" type="checkbox">
-                        Wi-Fi
-                      </label>
-                    </li>
-                  </ul>
-                </fieldset>
-                <fieldset class="catalog-filter-group">
-                  <legend class="catalog-filter-title">Тип жилья::</legend>
-                  <ul class="catalog-filter-list">
-                    <li class="catalog-filter-item">
-                      <label class="control">
-                        <input class="control-input" name="type-of-housing" type="radio" value="hotel" checked>
-                        Гостиница
-                      </label>
-                    </li>
-                    <li class="catalog-filter-item">
-                      <label class="control">
-                        <input class="control-input" name="type-of-housing" type="radio" value="motel">
-                        Мотель
-                      </label>
-                    </li>
-                    <li class="catalog-filter-item">
-                      <label class="control">
-                        <input class="control-input" name="type-of-housing" type="radio" value="apartments">
-                        Апартаменты
-                      </label>
-                    </li>
-                  </ul>
-                </fieldset>
-                <div class="catalog-filter-btn">
-                  <button class="catalog-submit-btn btn" type="submit">Применить</button>
-                  <button type="reset">Сбросить</button>
+                <div class="filter-group-wrapper">
+                  <fieldset class="catalog-filter-group">
+                    <legend class="catalog-filter-title">Инфраструктура:</legend>
+                    <ul class="catalog-filter-list">
+                      <li class="catalog-filter-item">
+                        <label class="control">
+                          <input class="visually-hidden control-input" name="swimming-pool" type="checkbox" checked>
+                          <span class="control-mark"></span>
+                          <span class="control-label">Бассейн</span>
+                        </label>
+                      </li>
+                      <li class="catalog-filter-item">
+                        <label class="control">
+                          <input class="visually-hidden control-input" type="checkbox" name="parking-space" checked>
+                          <span class="control-mark"></span>
+                          <span class="control-label">Парковка</span>
+                        </label>
+                      </li>
+                      <li class="catalog-filter-item">
+                        <label class="control">
+                          <input class=" visually-hidden control-input" name="Wi-Fi" type="checkbox">
+                          <span class="control-mark"></span>
+                          <span class="control-label">Wi-Fi</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </fieldset>
+                  <fieldset class="catalog-filter-group">
+                    <legend class="catalog-filter-title">Тип жилья:</legend>
+                    <ul class="catalog-filter-list">
+                      <li class="catalog-filter-item">
+                        <label class="control">
+                          <input class="visually-hidden control-input" name="type-of-housing" type="radio" value="hotel"
+                            checked>
+                          <span class="control-mark"></span>
+                          <span class="control-label">Гостиница</span>
+                        </label>
+                      </li>
+                      <li class="catalog-filter-item">
+                        <label class="control">
+                          <input class="visually-hidden control-input" name="type-of-housing" type="radio"
+                            value="motel">
+                          <span class="control-mark"></span>
+                          <span class="control-label">Мотель</span>
+                        </label>
+                      </li>
+                      <li class="catalog-filter-item">
+                        <label class="control">
+                          <input class="visually-hidden control-input" name="type-of-housing" type="radio"
+                            value="apartments">
+                          <span class="control-mark"></span>
+                          <span class="control-label">Апартаменты</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </fieldset>
+                </div>
+                <div class="filter-group-wrapper">
+                  <fieldset class="catalog-filter-group">
+                    <legend class="catalog-filter-title">
+                      Стоимость, ₽:
+                    </legend>
+                    <div class="range">
+                      <div class="range-wrapper-inputs">
+                        <label class="range-input-label min-label" for="range-input-min">от</label>
+                        <input class="range-input" type="number" value="0" name="min-price" id="range-input-min">
+                        <label class="range-input-label max-label" for="range-input-max">до</label>
+                        <input class="range-input" type="number" value="9000" name="max-price" id="range-input-max">
+                      </div>
+                      <div class="range-scale">
+                        <div class="range-bar" style="right: 62px; width: 207px;">
+                          <button class="range-toggle toggle-min">
+                            <span class="visually-hidden">Изменить минимальную цену</span>
+                          </button>
+                          <button class="range-toggle toggle-max">
+                            <span class="visually-hidden">Изменить максимальную цену</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </fieldset>
+                  <div class="catalog-filter-btn">
+                    <button class="catalog-submit-btn btn" type="submit">Применить</button>
+                    <button class="catalog-reset-btn " type="reset">Сбросить</button>
+                  </div>
                 </div>
               </form>
             </section>
@@ -138,11 +175,13 @@
           <div class="sort-wrapper wrapper">
             <h2 class="visually-hidden">Сортировка жилья</h2>
             <span class="section-title search-housing-quantity">Найдено гостиниц: 38</span>
-            <select class="sort-control" name="sort-control" id="sort-control" aria-label="сортировка жилья">
-              <option value="cheap">Сначала дешёвое</option>
-              <option value="popular">Сначала популярное</option>
-              <option value="expensive">Сначала дорогое</option>
-            </select>
+            <div class="select">
+              <select class="select-control" name="sort-control" id="sort-control" aria-label="Сортировка жилья">
+                <option value="cheap">Сначала дешёвое</option>
+                <option value="popular">Сначала популярное</option>
+                <option value="expensive">Сначала дорогое</option>
+              </select>
+            </div>
             <ul class="view-toggle-list">
               <li class="view-toggle-item">
                 <a class="view-toggle-link view-table" href="#">
@@ -176,8 +215,27 @@
                 <span class="cost-of-housing">От 4000 ₽</span>
                 <a class="btn btn-more" href="#">подробнее</a>
                 <a class="btn btn-to-favorites" href="#">в избранное</a>
-                <a class="stars-rating" href="#"></a>
-                <a class="info-rating-btn btn" href="#">Рейтинг: 8,5</a>
+                <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" fill="none">
+                  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 17" id="star">
+                    <path fill="#83B3D3" d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" />
+                  </symbol>
+                </svg>
+                <p class="stars-rating">
+                  <span class="visually-hidden">4 звезды</span>
+                  <svg class="star-icon" width="18" height="17" viewBox="0 0 18 17">
+                    <use xlink:href="#star" fill="#83B3D3"></use>
+                  </svg>
+                  <svg class="star-icon" width="18" height="17" viewBox="0 0 18 17">
+                    <use xlink:href="#star" fill="#83B3D3"></use>
+                  </svg>
+                  <svg class="star-icon" width="18" height="17" viewBox="0 0 18 17">
+                    <use xlink:href="#star" fill="#83B3D3"></use>
+                  </svg>
+                  <svg class="star-icon" width="18" height="17" viewBox="0 0 18 17">
+                    <use xlink:href="#star" fill="#83B3D3"></use>
+                  </svg>
+                </p>
+                <span class="info-rating btn">Рейтинг: 8,5</span>
               </li>
               <li class="card-item">
                 <figure class="housing">
@@ -191,8 +249,22 @@
                 <span class="cost-of-housing">От 5000 ₽</span>
                 <a class="btn btn-more" href="#">подробнее</a>
                 <a class="btn btn-in-favorites" href="#">в избранном</a>
-                <a class="stars-rating" href="#"></a>
-                <a class="info-rating-btn btn" href="#">Рейтинг: 9,2</a>
+                <p class="stars-rating">
+                  <span class="visually-hidden">4 звезды</span>
+                  <svg class="star-icon" width="18" height="17" viewBox="0 0 18 17">
+                    <use xlink:href="#star" fill="#83B3D3"></use>
+                  </svg>
+                  <svg class="star-icon" width="18" height="17" viewBox="0 0 18 17">
+                    <use xlink:href="#star" fill="#83B3D3"></use>
+                  </svg>
+                  <svg class="star-icon" width="18" height="17" viewBox="0 0 18 17">
+                    <use xlink:href="#star" fill="#83B3D3"></use>
+                  </svg>
+                  <svg class="star-icon" width="18" height="17" viewBox="0 0 18 17">
+                    <use xlink:href="#star" fill="#83B3D3"></use>
+                  </svg>
+                </p>
+                <span class="info-rating btn">Рейтинг: 9,2</span>
               </li>
               <li class="card-item">
                 <figure class="housing">
@@ -206,8 +278,19 @@
                 <span class="cost-of-housing">От 2500 ₽</span>
                 <a class="btn btn-more" href="#">подробнее</a>
                 <a class="btn btn-to-favorites" href="#">в избранное</a>
-                <a class="stars-rating" href="#"></a>
-                <a class="info-rating-btn btn" href="#">Рейтинг: 6,9</a>
+                <p class="stars-rating">
+                  <span class="visually-hidden">3 звезды</span>
+                  <svg class="star-icon" width="18" height="17" viewBox="0 0 18 17">
+                    <use xlink:href="#star" fill="#83B3D3"></use>
+                  </svg>
+                  <svg class="star-icon" width="18" height="17" viewBox="0 0 18 17">
+                    <use xlink:href="#star" fill="#83B3D3"></use>
+                  </svg>
+                  <svg class="star-icon" width="18" height="17" viewBox="0 0 18 17">
+                    <use xlink:href="#star" fill="#83B3D3"></use>
+                  </svg>
+                </p>
+                <span class="info-rating btn">Рейтинг: 6,9</span>
               </li>
               <li class="card-item">
                 <figure class="housing">
@@ -221,8 +304,16 @@
                 <span class="cost-of-housing">От 1500 ₽</span>
                 <a class="btn btn-more" href="#">подробнее</a>
                 <a class="btn btn-to-favorites" href="#">в избранное</a>
-                <a class="stars-rating" href="#"></a>
-                <a class="info-rating-btn btn" href="#">Рейтинг: 5,0</a>
+                <p class="stars-rating">
+                  <span class="visually-hidden">2 звезды</span>
+                  <svg class="star-icon" width="18" height="17" viewBox="0 0 18 17">
+                    <use xlink:href="#star" fill="#83B3D3"></use>
+                  </svg>
+                  <svg class="star-icon" width="18" height="17" viewBox="0 0 18 17">
+                    <use xlink:href="#star" fill="#83B3D3"></use>
+                  </svg>
+                </p>
+                <span class="info-rating btn">Рейтинг: 5,0</span>
               </li>
             </ul>
           </div>
@@ -248,7 +339,7 @@
               </li>
             </ul>
             <label for="card-control">Гостиниц на странице:
-              <select class="card-control" name="card-control" id="card-control">
+              <select class="select-card-control" name="card-control" id="card-control">
                 <option value="4">4</option>
                 <option value="8">8</option>
                 <option value="12">12</option>
@@ -261,12 +352,12 @@
 
         <section class="newsletter newsletter-catalog">
           <div class="newsletter-wrapper">
-            <h2 class="section-title">Подпишитесь на рассылку</h2>
-            <p class="newsletter-desk">Только полезная информация и никакого спама, честное бойскаутское!
-            </p>
+            <h2 class="section-title newsletter-title">Подпишитесь на рассылку</h2>
+            <p class="newsletter-desk">Только полезная информация и никакого спама, <br> честное
+              бойскаутское!</p>
             <form class="newsletter-form" action="https://echo.htmlacademy.ru" method="post">
-              <label for="email">Ваш e-mail</label>
-              <input type="email" name="email" id="email">
+              <label class="visually-hidden" for="email">Ваш e-mail</label>
+              <input class="field newsletter-email-field" placeholder="Ваш e-mail" type="email" name="email" id="email">
               <button class="btn btn-newsletter-submit" type="submit">Подписаться</button>
             </form>
           </div>
